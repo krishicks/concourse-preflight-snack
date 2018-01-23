@@ -37,8 +37,8 @@ type Resource struct {
 type Config struct {
 	PPLayouts     []Layout          `json:"pp_layouts,omitempty" yaml:"pp_layouts,omitempty"`
 	Resources     []Resource        `json:"resources" yaml:"resources"`
-	ResourceTypes atc.ResourceTypes `json:"resource_types" yaml:"resource_types"`
-	Groups        atc.GroupConfigs  `json:"groups" yaml:"groups"`
+	ResourceTypes atc.ResourceTypes `json:"resource_types,omitempty" yaml:"resource_types,omitempty"`
+	Groups        atc.GroupConfigs  `json:"groups,omitempty" yaml:"groups,omitempty"`
 	Jobs          []json.RawMessage `json:"jobs" yaml:"jobs"`
 }
 
