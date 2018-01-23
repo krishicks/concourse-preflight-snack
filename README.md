@@ -42,7 +42,9 @@ resources:
     private_key: ((git_private_key))
 
 jobs: []                                # jobs will be appended to
-groups: []                              # groups will be appended to
+groups:
+- name: all                             # 'all' group will be appended to because the layout declares groups
+- name: test                            # so will 'test'
 ```
 
 ```
